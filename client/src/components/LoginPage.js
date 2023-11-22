@@ -10,7 +10,7 @@ const LoginPage=()=>{
     const handleSubmit = async (event)=>{
         event.preventDefault();
         try{
-            const response = await axios.post('https://montblanc385.netlify.app/login'
+            const response = await axios.post('http://localhost:5000/login'
             ,{email,password});
             console.log(response.data);
             navigate('/profile');
