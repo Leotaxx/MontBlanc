@@ -15,7 +15,7 @@ const LoginPage=()=>{
             console.log(response.data);
             navigate('/profile');
         }catch(error){
-            console.error(error);
+            console.log('1');
         }
     };
 
