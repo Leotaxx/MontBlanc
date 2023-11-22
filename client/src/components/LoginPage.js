@@ -10,7 +10,7 @@ const LoginPage=()=>{
     const handleSubmit = async (event)=>{
         event.preventDefault();
         try{
-            const response = await axios.post('http://localhost:5000/login'
+            const response = await axios.post('http://localhost:3000/'
             ,{email,password});
             console.log(response.data);
             navigate('/profile');
