@@ -1,4 +1,7 @@
 {
+  "homepage": "https://montblanc385.netlify.app",
+
+
   "name": "client",
   "version": "0.1.0",
   "private": true,
