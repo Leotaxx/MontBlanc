@@ -4,7 +4,7 @@ import LoginPage from './components/LoginPage';
 import ProfilePage  from './components/ProfilePage';
 function App() {
   return (
-      <Router basename='/client'>
+      <Router >
         <Routes>
           <Route path="/" element={<LoginPage />}  />
 
