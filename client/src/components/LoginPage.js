@@ -10,7 +10,7 @@ const LoginPage=()=>{
     const handleSubmit = async (event)=>{
         event.preventDefault();
         try{
-            const response = await axios.post('http://localhost:3000/'
+            const response = await axios.post('mongodb+srv://lyleride:lyleride@cluster0.al8raba.mongodb.net/?retryWrites=true&w=majority'
             ,{email,password});
             console.log(response.data);
             navigate('/profile');
