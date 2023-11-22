@@ -1,16 +1,14 @@
-import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+
 import LoginPage from './components/LoginPage';
-import ContentPage from'./components/ContentPage';
-import ProfilePage  from './components/ProfilePage';
+import React from 'react';
+
 function App() {
   return (
-      <Router>
-        <Routes>
-          <Route path="/" element={<LoginPage />}  />
-
-          <Route path="/profile" element={<ProfilePage />} />
-        </Routes>
-      </Router>
+    <div className="App">
+      <header className="App-header">
+        <LoginPage />
+      </header>
+    </div>
   );
 }
 
