@@ -3,7 +3,7 @@ const router=express.Router();
 const User = require('../models/User');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const auth = require('..authMiddleware');
+const auth = require('../middleware/authMiddleware.js');
 
 router.get('/proctected',auth,(req,res)=>{
     res.json({msg:'Welcom user ${req.user.id}'});

@@ -1,6 +1,6 @@
 const express=require('express');
-const router=express.Router;
-const Car = require('../models/Car');
+const router=express.Router();
+const Car = require('../models/Car.js');
 
 router.post('/add',async(req,res)=>{
     try{
